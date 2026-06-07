@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xbyte — Builder & Web3 Operator</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg:#0a0a0b;--fg:#e4e4e7;--dim:#71717a;--accent:#3b82f6;--accent2:#8b5cf6;--card:#18181b;--border:#27272a}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+        a{color:var(--accent);text-decoration:none;transition:.2s}a:hover{color:var(--accent2)}
+        .container{max-width:800px;margin:0 auto;padding:2rem 1.5rem}
+
+        /* Hero */
+        .hero{padding:4rem 0 3rem;text-align:center}
+        .hero h1{font-size:2.5rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .hero .tagline{font-size:1.15rem;color:var(--dim);margin-top:.5rem}
+        .hero .status{display:inline-flex;align-items:center;gap:.4rem;margin-top:1rem;padding:.35rem 1rem;background:var(--card);border:1px solid var(--border);border-radius:2rem;font-size:.85rem;color:var(--dim)}
+        .hero .status .dot{width:8px;height:8px;background:#22c55e;border-radius:50%;animation:pulse 2s infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+        /* Section */
+        section{margin-top:2.5rem}
+        section h2{font-size:1.25rem;font-weight:600;margin-bottom:1rem;color:var(--fg);display:flex;align-items:center;gap:.5rem}
+        section h2 span{font-size:1.1rem}
+
+        /* Cards */
+        .grid{display:grid;gap:1rem}
+        .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.25rem;transition:border-color .2s}
+        .card:hover{border-color:var(--accent)}
+        .card h3{font-size:1rem;font-weight:600;margin-bottom:.3rem}
+        .card p{font-size:.9rem;color:var(--dim)}
+        .card .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+        .tag{font-size:.75rem;padding:.2rem .6rem;background:rgba(59,130,246,.1);color:var(--accent);border-radius:1rem;border:1px solid rgba(59,130,246,.2)}
+
+        /* Skills */
+        .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.75rem}
+        .skill{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.75rem 1rem;font-size:.9rem;display:flex;align-items:center;gap:.5rem}
+        .skill .icon{font-size:1.1rem}
+
+        /* Links */
+        .links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+        .link-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1.2rem;background:var(--card);border:1px solid var(--border);border-radius:8px;font-size:.9rem;color:var(--fg);transition:.2s}
+        .link-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+        /* Footer */
+        footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);text-align:center;color:var(--dim);font-size:.8rem}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="hero">
+        <h1>xbyte</h1>
+        <p class="tagline">Builder · Web3 Operator · Automation Architect</p>
+        <div class="status"><span class="dot"></span> Open to collabs &amp; builds</div>
+    </header>
+
+    <section>
+        <h2><span>⚡</span> Focus Areas</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Web3 &amp; On-Chain Ops</h3>
+                <p>Multi-chain wallet management, airdrop farming, DeFi strategy, NFT operations, and token sniping infrastructure.</p>
+                <div class="tags"><span class="tag">EVM</span><span class="tag">Solana</span><span class="tag">DeFi</span><span class="tag">NFT</span><span class="tag">Sniping</span></div>
+            </div>
+            <div class="card">
+                <h3>Automation &amp; Bots</h3>
+                <p>Telegram bots, scheduled workflows, web scraping, mass account creation, and end-to-end pipeline automation.</p>
+                <div class="tags"><span class="tag">Telegram</span><span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">Cron</span><span class="tag">n8n</span></div>
+            </div>
+            <div class="card">
+                <h3>AI Agent Systems</h3>
+                <p>Custom AI agent stacks with tool-use, multi-skill dispatch, crypto-integrated operations, and autonomous execution.</p>
+                <div class="tags"><span class="tag">LLM</span><span class="tag">Agents</span><span class="tag">Hermes</span><span class="tag">Prompt Eng</span></div>
+            </div>
+            <div class="card">
+                <h3>Infrastructure &amp; DevOps</h3>
+                <p>VPS management, GPU mining operations, systemd orchestration, monitoring, and server automation.</p>
+                <div class="tags"><span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Nginx</span><span class="tag">GPU</span><span class="tag">Systemd</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2><span>🛠</span> Tech Stack</h2>
+        <div class="skills-grid">
+            <div class="skill"><span class="icon">🐍</span> Python</div>
+            <div class="skill"><span class="icon">🟩</span> Node.js</div>
+            <div class="skill"><span class="icon">🐧</span> Linux</div>
+            <div class="skill"><span class="icon">🐳</span> Docker</div>
+            <div class="skill"><span class="icon">⛓</span> Solidity</div>
+            <div class="skill"><span class="icon">🤖</span> AI / LLM</div>
+            <div class="skill"><span class="icon">🎭</span> Playwright</div>
+            <div class="skill"><span class="icon">🗃</span> SQLite / Postgres</div>
+            <div class="skill"><span class="icon">📱</span> Telegram API</div>
+            <div class="skill"><span class="icon">🌐</span> REST / Webhooks</div>
+            <div class="skill"><span class="icon">⚙️</span> Git / CI</div>
+            <div class="skill"><span class="icon">🔐</span> Crypto / Wallets</div>
+        </div>
+    </section>
+
+    <section>
+        <h2><span>🔗</span> Connect</h2>
+        <div class="links">
+            <a href="https://github.com/xbyteid" class="link-btn" target="_blank">🐙 GitHub</a>
+            <a href="https://t.me/xbyteid" class="link-btn" target="_blank">✈️ Telegram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 xbyte · Built with purpose, shipped with speed.</p>
+    </footer>
+</div>
+</body>
+</html>
